@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="job1" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+        <property name="targetObject">
+            <bean class="com.buding.common.schedule.playbackFile.PlaybackFileTask"/>
+        </property>
+        <property name="targetMethod" value="clearOldPlaybackFile" />
+        <property name="concurrent" value="false" /><!-- 作业不并发调度 -->
+    </bean>
+
+    <!--<bean id="simpleTrigger" class="org.springframework.scheduling.quartz.SimpleTriggerBean">-->
+        <!--<property name="jobDetail" ref="job1" />-->
+        <!--<property name="startDelay" value="0" />&lt;!&ndash; 调度工厂实例化后，经过0秒开始执行调度 &ndash;&gt;-->
+        <!--<property name="repeatInterval" value="2000" />&lt;!&ndash; 每2秒调度一次 &ndash;&gt;-->
+    <!--</bean>-->
+
+    <bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+        <property name="jobDetail" ref="job1" />
+        <property name="cronExpression" value="0 0 05 * * ?" /> <!--每天某个时间点调度一次-->
+    </bean>
+
+    <bean class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+        <property name="triggers">
+            <list>
+                <ref bean="cronTrigger" />
+            </list>
+        </property>
+    </bean>
+</beans>

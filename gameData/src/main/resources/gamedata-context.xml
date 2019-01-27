@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <context:component-scan base-package="com.buding.db"/>
+    <context:property-placeholder location="classpath*:*.properties"/>
+    <import resource="rmi-server.xml"/>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+        <property name="url" value="${jdbc.url}" />
+        <property name="username" value="${jdbc.user}" />
+        <property name="password" value="${jdbc.passwd}" />
+        <property name="maxActive" value="50" />
+        <property name="maxIdle" value="10" />
+        <property name="initialSize" value="20" />
+        <property name="timeBetweenEvictionRunsMillis" value="10800000"/>
+        <property name="minEvictableIdleTimeMillis" value="3600000"/>
+    </bean>
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="mapperLocations" value="classpath:sqlmaps/*.xml" />
+    </bean>
+    <bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+        <constructor-arg index="0" ref="sqlSessionFactory" />
+    </bean>
+    <!--对数据库操作都从这里取jdbcTemplate-->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <bean id="commonDao" class="com.buding.common.db.dao.impl.CommonDaoImpl"/>
+    <bean id="cacheService" class="com.buding.common.db.cache.impl.CacheServiceImpl">
+        <property name="entityCacheSize" value="500000"/>
+        <property name="commonCacheSize" value="500000"/>
+    </bean>
+    <bean class="com.buding.common.cluster.service.ServerManager" id="serverManager"/>
+    <bean id="server" class="com.buding.common.server.Server"/>
+    <bean id="dbService" class="com.buding.db.DbServiceImpl">
+        <constructor-arg index="0" value="2"/>
+        <constructor-arg index="1" value="16"/>
+        <constructor-arg index="2" value="600"/>
+        <constructor-arg index="3" value="2000"/>
+        <property name="server" ref="server"/>
+        <property name="commonDao" ref="commonDao"/>
+    </bean>
+    <import resource="classpath:dubbo-server/dubbo-server.xml"/>
+    <import resource="admin-server.xml"/>
+</beans>

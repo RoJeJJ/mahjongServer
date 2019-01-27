@@ -1,0 +1,14 @@
+[
+{
+	"note":"每周开局排行",
+	"id":"GAME_COUNT_RANK", 
+	"name":"开局榜",
+	"pointType":2
+},
+{
+	"id":"GAME_COIN_RANK",
+	"note":"财富排行榜",
+	"name":"财富榜",
+	"pointType":1
+}
+]

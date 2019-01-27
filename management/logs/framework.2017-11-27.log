@@ -1,0 +1,32 @@
+10:52:07.645 [main] - class loaded size - 0
+10:52:07.999 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/service/SkipLoginMapping.groovy
+10:52:08.272 [Timer-0] - class loaded size - 2
+10:52:09.093 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/user/User.groovy
+10:52:09.208 [Timer-0] - class loaded size - 13
+10:52:10.237 [main] - class loaded size - 13
+10:52:10.437 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/service/UserService.groovy
+10:52:10.778 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/battle/BattleProxy.groovy
+10:52:10.843 [Timer-0] - class loaded size - 24
+10:52:10.857 [main] - class loaded size - 24
+10:52:10.965 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/service/RoleMapping.groovy
+10:52:11.304 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/battle/HallProxy.groovy
+10:52:11.306 [main] - class loaded size - 29
+10:52:11.504 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/common/FieldMerger.groovy
+10:52:11.505 [main] - class loaded size - 39
+10:52:11.506 [main] - get class from loaded - comp.common.RedisCacher
+10:52:11.506 [main] - class not changed or is already compiled by other bean - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/common/RedisCacher.groovy
+10:52:11.509 [main] - class loaded size - 39
+10:52:11.511 [main] - get class from loaded - comp.Constants
+10:52:11.511 [main] - class not changed or is already compiled by other bean - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/Constants.groovy
+10:52:11.514 [main] - class loaded size - 39
+10:52:11.521 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/StatusContants.groovy
+10:52:11.522 [main] - class not changed or is already compiled by other bean - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/user/User.groovy
+10:52:11.524 [main] - class loaded size - 40
+10:52:11.899 [main] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/comp/VerifyCodeUtils.groovy
+10:52:12.586 [Timer-0] - class loaded size - 41
+10:52:12.668 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/utils/BusinessException.groovy
+10:52:14.277 [Timer-0] - class loaded size - 42
+10:52:14.411 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/service/AdminLogService.groovy
+10:52:14.795 [Timer-0] - class loaded size - 43
+10:52:14.853 [Timer-0] - recompile as it is changed - file:/D:/WorkSpace/newSvn/project/mj/mahjongServer/management/src/service/AgentService.groovy
+10:52:15.804 [main] - load context ok, size - 17

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/buildModules.iml" filepath="$PROJECT_DIR$/buildModules.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../chargeServer/chargeServer.iml" filepath="$PROJECT_DIR$/../chargeServer/chargeServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../conf/conf.iml" filepath="$PROJECT_DIR$/../conf/conf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameApi/gameApi.iml" filepath="$PROJECT_DIR$/../gameApi/gameApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../GameBattle/gameBattle.iml" filepath="$PROJECT_DIR$/../GameBattle/gameBattle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameCluster/gameCluster.iml" filepath="$PROJECT_DIR$/../gameCluster/gameCluster.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameData/gameData.iml" filepath="$PROJECT_DIR$/../gameData/gameData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameMsg/gameMsg.iml" filepath="$PROJECT_DIR$/../gameMsg/gameMsg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamePlatform/gamePlatform.iml" filepath="$PROJECT_DIR$/../gamePlatform/gamePlatform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamePoker/gamePoker.iml" filepath="$PROJECT_DIR$/../gamePoker/gamePoker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameRank/gameRank.iml" filepath="$PROJECT_DIR$/../gameRank/gameRank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameTest/gameTest.iml" filepath="$PROJECT_DIR$/../gameTest/gameTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gameToken/gameToken.iml" filepath="$PROJECT_DIR$/../gameToken/gameToken.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../gamelib/gamelib.iml" filepath="$PROJECT_DIR$/../gamelib/gamelib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../generator/generator.iml" filepath="$PROJECT_DIR$/../generator/generator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hallApi/hallApi.iml" filepath="$PROJECT_DIR$/../hallApi/hallApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../hallWeb/hallWeb.iml" filepath="$PROJECT_DIR$/../hallWeb/hallWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../management/management.iml" filepath="$PROJECT_DIR$/../management/management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pTest/pTest.iml" filepath="$PROJECT_DIR$/../pTest/pTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../parent/parent.iml" filepath="$PROJECT_DIR$/../parent/parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../PBProtocol/protocol.iml" filepath="$PROJECT_DIR$/../PBProtocol/protocol.iml" />
+    </modules>
+  </component>
+</project>

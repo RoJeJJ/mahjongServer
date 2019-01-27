@@ -1,0 +1,61 @@
+10:52:06.758 [main] INFO  c.g.webx.web.VertxAdapterHandler - config - {webroot=ws, handlerLoadInterval=10000, port=80, isPrd=false, isTemplateDebug=true, zkHost=127.0.0.1}
+10:52:08.168 [main] INFO  c.g.webx.web.VertxAdapterHandler - set handler event listener
+10:52:12.113 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - IndexController.groovy
+10:52:12.122 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:12.186 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - User - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\admin\IndexController.groovy
+10:52:12.353 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - UserRole - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\admin\IndexController.groovy
+10:52:12.520 [main] INFO  o.s.c.s.GenericGroovyApplicationContext - Refreshing org.springframework.context.support.GenericGroovyApplicationContext@476aac9: startup date [Mon Nov 27 10:52:12 GMT+08:00 2017]; root of context hierarchy
+10:52:12.955 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - Base.groovy
+10:52:12.976 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:13.649 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - CollectLog.groovy
+10:52:13.650 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:13.651 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\common\CollectLog.groovy
+10:52:13.838 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - Config.groovy
+10:52:13.839 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:13.848 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - RedisCacher - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\common\Config.groovy
+10:52:14.138 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - ActNoticeController.groovy
+10:52:14.145 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:14.146 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\ActNoticeController.groovy
+10:52:14.632 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - AgentAdminController.groovy
+10:52:14.633 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:14.635 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\AgentAdminController.groovy
+10:52:15.260 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - AgentController.groovy
+10:52:15.267 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:15.271 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - VerifyCodeUtils - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\AgentController.groovy
+10:52:15.275 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\AgentController.groovy
+10:52:15.773 [main] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService  'threadPool'
+10:52:15.804 [main] INFO  c.g.webx.web.VertxAdapterHandler - context init..
+10:52:15.834 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - ClusterController.groovy
+10:52:15.838 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:15.847 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.17.v20150415
+10:52:15.848 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\ClusterController.groovy
+10:52:15.850 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\ClusterController.groovy
+10:52:15.999 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:80
+10:52:16.197 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - ConfAdminController.groovy
+10:52:16.199 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:16.204 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\ConfAdminController.groovy
+10:52:16.612 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - DeskController.groovy
+10:52:16.614 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:16.616 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\DeskController.groovy
+10:52:16.847 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - GameLogHistory.groovy
+10:52:16.847 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:16.849 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - BattleProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\GameLogHistory.groovy
+10:52:16.850 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\GameLogHistory.groovy
+10:52:16.998 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - LogAdmin.groovy
+10:52:16.998 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:17.000 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\LogAdmin.groovy
+10:52:17.204 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - MatchController.groovy
+10:52:17.205 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:17.209 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\MatchController.groovy
+10:52:17.397 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - MJController.groovy
+10:52:17.398 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:17.400 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - BattleProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\MJController.groovy
+10:52:17.655 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - MsgController.groovy
+10:52:17.656 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:17.659 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\MsgController.groovy
+10:52:18.051 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - PlayerAdminController.groovy
+10:52:18.052 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:18.053 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - HallProxy - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\PlayerAdminController.groovy
+10:52:18.237 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-binding compile ok 4 - StatisController.groovy
+10:52:18.246 [Timer-0] INFO  c.g.webx.web.VertxAdapterHandler$1 - handler-event-listener : service.SkipLoginMapping@2d2840e2
+10:52:18.270 [Timer-0] INFO  com.guosen.webx.web.ReferParser - add handler comp mapping - FieldMerger - D:\WorkSpace\newSvn\project\mj\mahjongServer\management\src\handler\mj\StatisController.groovy

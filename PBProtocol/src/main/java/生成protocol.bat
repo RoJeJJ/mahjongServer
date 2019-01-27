@@ -1,0 +1,1 @@
+protoc.exe --java_out=D:\WorkSpace\newSvn\project\mj\mahjongServer\PBProtocol\src\main\java MsgBase.proto User.proto Hall.proto MJ.proto MsgGame.proto

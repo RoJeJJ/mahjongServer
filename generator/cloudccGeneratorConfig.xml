@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry location="C:/workspace2/cloudcc/mysql-connector-java-5.1.8.jar" />
+
+	<context id="mysqlTables" targetRuntime="MyBatis3">
+		<property name="mergeable" value="false"></property>
+		<!-- <property name="defualtNamespaceType" value="SameAsModel"></property> -->
+		<property name="enableUpdateByPrimaryKey" value="true"></property>
+		<property name="enableSelectByExample" value="true"></property>
+		<property name="enableSelectByPrimaryKey" value="true"></property>
+		<property name="enableInsert" value="true"></property>
+		<property name="enableInsertSelective" value="true"></property>
+		<property name="enableDeleteByPrimaryKey" value="true"></property>
+		<property name="enableDeleteByExample" value="true"></property>
+		<property name="enableCountByExample" value="true"></property>
+		<property name="enableUpdateByExample" value="true"></property>
+		<property name="enableUpdateByExampleSelective" value="true"></property>
+		<property name="selectByPrimaryKeyQueryId" value="true"></property>
+		<property name="selectByExampleQueryId" value="true"></property>
+		<property name="selectByExampleQueryId" value="true"></property>
+		<property name="enableUpdateByPrimaryKeySelective" value="true"></property>
+
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://127.0.0.1:3306/fund" userId="root"
+			password="123456">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.alics.cms.model"
+			targetProject="C:/workspace3/cloudcc/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="sqlmaps"
+			targetProject="C:/workspace3/cloudcc/config">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.alics.cms.mapper" targetProject="C:/workspace3/cloudcc/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table tableName="page_layout"></table>
+		<table tableName="obj"></table>
+		<table tableName="obj_profile"></table>
+		<table tableName="obj_field"></table>
+		<table tableName="field_profile"></table>
+		<table tableName="tab"></table>
+		<table tableName="app"></table>
+		<table tableName="user"></table>
+		<table tableName="app_tab"></table>
+		<table tableName="app_profile"></table>
+		<table tableName="profile"></table>
+		<table tableName="tab_profile"></table>
+		<table tableName="record_type"></table>
+		<table tableName="record_type_profile"></table>
+		<table tableName="search_layout"></table>
+		<table tableName="sys_dic"></table>
+		<table tableName="obj_view"></table>
+		<table tableName="role"></table>
+		<table tableName="org_profile"></table>
+		<table tableName="user_role"></table>
+		<table tableName="share_rule"></table>
+		<table tableName="field_track_setting"></table>
+		<table tableName="field_track_data"></table>
+		<table tableName="home_page_component"></table>
+		<table tableName="homepage_layout"></table>
+		<table tableName="homepage_layout_component"></table>
+		<table tableName="obj_view_filter_item"></table>
+		<table tableName="obj_view_visibility"></table>
+		<table tableName="relate_list"></table>
+		<table tableName="approval"></table>
+		<table tableName="approval_field_update"></table>
+		<table tableName="approval_operation"></table>
+		<table tableName="pwd_policy"></table>
+		<table tableName="sys_audit_log"></table>
+		<table tableName="search_duplicate_filter"></table>
+		<table tableName="search_duplicate_rule"></table>
+		<table tableName="approval_step"></table>
+		<table tableName="sys_setting"></table>
+		<table tableName="file_relation"></table>
+		<table tableName="report"></table>
+		<table tableName="report_folder"></table>
+		<table tableName="login_history"></table>
+	</context>
+</generatorConfiguration>
+

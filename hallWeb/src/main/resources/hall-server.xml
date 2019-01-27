@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans
+	   http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	   http://www.springframework.org/schema/context
+	   http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+
+	<!-- 开启自动扫描 autowire 配置 -->
+	<context:component-scan base-package="com.buding.hall"/>
+	<context:component-scan base-package="com.buding.cluster"/>
+	<context:component-scan base-package="com.buding.rank"/>
+
+	<context:property-placeholder location="classpath*:*.properties" />
+
+	<import resource="configuration.xml" />
+	<import resource="schedule.xml" />
+	<import resource="srv.xml" />
+	<!-- <import resource="rmi-client.xml" /> -->
+	<!-- <import resource="rmi-server.xml" /> -->
+	<import resource="dubbo-server/dubbo-server.xml" />
+	<import resource="dubbo-client/dubbo-client.xml" />
+	<import resource="admin-server.xml" />
+
+	<bean id="configManager" class="com.buding.hall.config.ConfigManager">
+		<property name="shopConfigFolder" value="file:${resourceDir}/shop"/>
+			<!--<value>${resourceDir}/shop</value>-->
+		<property name="taskConfigFolder" value="${resourceDir}/task"/>
+		<property name="propsConfigFolder" value="${resourceDir}/item"/>
+		<property name="exchangeConfigFolder" value="${resourceDir}/exchange"/>
+		<property name="rankConfigFolder" value="${resourceDir}/rank"/>
+		<property name="statusConfFolder" value="${resourceDir}/status"/>
+		<property name="gmPath" value="${resourceDir}/gm"/>
+		<property name="privateKeyFile" value="${resourceDir}/key/rsa_private_key.pem"/>
+		<property name="userinitTplPath" value="${resourceDir}/userinit/new_user.json"/>
+	</bean>
+	
+	<bean id="randomNameConfigManager" class="com.buding.common.randomName.RandomNameConfigManager">
+		<property name="nameConfigFolder" value="${resourceDir}/names"/>
+	</bean>
+
+	<bean id="randomNameService" class="com.buding.common.randomName.RandomNameService">
+	</bean>
+	
+
+	<bean class="com.buding.common.token.TokenClient"/>
+	<bean class="com.buding.hall.module.user.helper.UserSecurityHelper"/>
+	<bean id="hallEventBus" class="com.buding.common.event.EventBusImpl">
+		<property name="poolSize" value="1"/>
+		<property name="queueSize" value="10000"/>
+		<property name="poolMaxSize" value="10"/>
+		<property name="poolKeepAlive" value="60"/>
+	</bean>
+
+	<bean id="nettyServer" class="com.buding.common.network.server.NettyServer">
+		<property name="port" value="5000"/>
+		<property name="protocolInitalizer">
+			<bean class="com.buding.common.network.codec.NettyServerInitializer">
+				<property name="handlers">
+					<list>
+<!-- 						<bean class="com.buding.common.network.codec.Netty4Codec"></bean> -->
+						<bean class="com.buding.hall.network.HallServerHandler"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chargeServer" />
+        <module name="conf" />
+        <module name="gameApi" />
+        <module name="gameBattle" />
+        <module name="gameCluster" />
+        <module name="gameData" />
+        <module name="gamelib" />
+        <module name="gameMsg" />
+        <module name="gamePlatform" />
+        <module name="gamePoker" />
+        <module name="gameRank" />
+        <module name="gameTest" />
+        <module name="gameToken" />
+        <module name="generator" />
+        <module name="hallApi" />
+        <module name="hallWeb" />
+        <module name="management" />
+        <module name="protocol" />
+        <module name="pTest" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="buildModules" target="1.8" />
+      <module name="chargeServer" target="1.8" />
+      <module name="conf" target="1.8" />
+      <module name="gameApi" target="1.8" />
+      <module name="gameBattle" target="1.8" />
+      <module name="gameCluster" target="1.7" />
+      <module name="gameData" target="1.8" />
+      <module name="gamelib" target="1.8" />
+      <module name="gameMsg" target="1.8" />
+      <module name="gamePlatform" target="1.8" />
+      <module name="gamePoker" target="1.8" />
+      <module name="gameRank" target="1.8" />
+      <module name="gameTest" target="1.8" />
+      <module name="gameToken" target="1.8" />
+      <module name="generator" target="1.8" />
+      <module name="hallApi" target="1.8" />
+      <module name="hallWeb" target="1.8" />
+      <module name="management" target="1.8" />
+      <module name="parent" target="1.8" />
+      <module name="protocol" target="1.8" />
+      <module name="pTest" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

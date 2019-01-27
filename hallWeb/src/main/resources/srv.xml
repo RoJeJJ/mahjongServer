@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+  
+    <bean id="userService" class="com.buding.hall.module.user.service.UserServiceImpl" />
+    <bean id="userDataService" class="com.buding.hall.module.user.service.UserDataServiceImpl" />
+    <bean id="itemService" class="com.buding.hall.module.item.service.impl.ItemServiceImpl" />
+    <bean id="awardService" class="com.buding.hall.module.award.service.AwardServiceImpl" />
+    <bean id="statusService" class="com.buding.hall.module.status.service.StatusServiceImpl" />    
+    <bean id="shopService" class="com.buding.hall.module.shop.service.impl.ShopServiceImpl" />
+	<bean id="clusterExternalService" class="com.buding.cluster.service.ClusterExternalService"/>
+	<bean id="userRankExternalService" class="com.buding.rank.service.RankExternalService"/>
+	<bean id="userRoomService" class="com.buding.hall.module.vip.service.UserRoomServiceImpl"/>
+	<bean id="serverBgTaskLoop" class="com.buding.common.loop.ServerLoop"/>
+	<bean id="serverMaintainLoop" class="com.buding.common.loop.ServerLoop"/>
+	<bean id="serverNetWorkLoop" class="com.buding.common.loop.ServerLoop"/>
+	<bean id="hallPortalService" class="com.buding.hall.module.ws.HallPortalServiceImpl"/>
+	
+	
+</beans>

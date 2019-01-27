@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+	<classPathEntry location="C:/workspace2/cloudcc/mysql-connector-java-5.1.8.jar" />
+	<context id="mysqlTables" targetRuntime="MyBatis3">
+		<property name="mergeable" value="false"></property>
+		<!-- <property name="defualtNamespaceType" value="SameAsModel"></property> -->
+		<property name="enableUpdateByPrimaryKey" value="true"></property>
+		<property name="enableSelectByExample" value="true"></property>
+		<property name="enableSelectByPrimaryKey" value="true"></property>
+		<property name="enableInsert" value="true"></property>
+		<property name="enableInsertSelective" value="true"></property>
+		<property name="enableDeleteByPrimaryKey" value="true"></property>
+		<property name="enableDeleteByExample" value="true"></property>
+		<property name="enableCountByExample" value="true"></property>
+		<property name="enableUpdateByExample" value="true"></property>
+		<property name="enableUpdateByExampleSelective" value="true"></property>
+		<property name="selectByPrimaryKeyQueryId" value="true"></property>
+		<property name="selectByExampleQueryId" value="true"></property>
+		<property name="selectByExampleQueryId" value="true"></property>
+		<property name="enableUpdateByPrimaryKeySelective" value="true"></property>
+
+		<plugin type="org.mybatis.generator.plugins.EqualsHashCodePlugin" />
+		<plugin type="org.mybatis.generator.plugins.SerializablePlugin" />
+		<plugin type="org.mybatis.generator.plugins.ToStringPlugin" />
+
+		<commentGenerator>
+			<property name="suppressAllComments" value="true" />
+			<property name="suppressDate" value="true" />
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://121.40.177.10:3306/wifi" userId="kedouwan"
+			password="123456">
+		</jdbcConnection>
+
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+
+		<javaModelGenerator targetPackage="com.hxston.community.model"
+			targetProject="C:/workspace2/wifi/src/main/java">
+			<property name="enableSubPackages" value="true" />
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="sqlmaps"
+			targetProject="C:/workspace2/wifi/config">
+			<property name="enableSubPackages" value="true" />
+		</sqlMapGenerator>
+
+		<javaClientGenerator type="XMLMAPPER"
+			targetPackage="com.hxston.community.mapper" targetProject="C:/workspace2/wifi/src/main/java">
+			<property name="enableSubPackages" value="true" />
+		</javaClientGenerator>
+
+		<table tableName="wifi_user"></table>
+		<table tableName="wifi_order"></table>
+		<table tableName="wifi_remain_val"></table>
+	</context>
+</generatorConfiguration>

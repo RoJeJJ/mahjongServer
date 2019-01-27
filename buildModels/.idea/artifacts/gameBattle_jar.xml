@@ -1,0 +1,104 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="gameBattle:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="gameBattle.jar">
+      <element id="module-output" name="gameBattle" />
+      <element id="module-output" name="hallApi" />
+      <element id="module-output" name="gameApi" />
+      <element id="module-output" name="gamePoker" />
+      <element id="module-output" name="protocol" />
+      <element id="module-output" name="gamelib" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/errorprone/error_prone_annotations/2.0.11/error_prone_annotations-2.0.11.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/googlecode/protobuf-java-format/protobuf-java-format/1.2/protobuf-java-format-1.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/guava/guava/20.0/guava-20.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-core/1.1.1/grpc-core-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-http/8.1.17.v20150415/jetty-http-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-security/8.1.17.v20150415/jetty-security-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/apache/commons/commons-compress/1.3/commons-compress-1.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-beans/3.1.1.RELEASE/spring-beans-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/javassist/javassist/3.15.0-GA/javassist-3.15.0-GA.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-protobuf-lite/1.1.1/grpc-protobuf-lite-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/apache/zookeeper/zookeeper/3.3.1/zookeeper-3.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-buffer/4.1.8.Final/netty-buffer-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-pool/commons-pool/1.5.4/commons-pool-1.5.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/101tec/zkclient/0.4/zkclient-0.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/alibaba/dubbo/2.5.3/dubbo-2.5.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-resolver/4.1.8.Final/netty-resolver-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-handler-proxy/4.1.8.Final/netty-handler-proxy-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../gamelib/mavenlib/groovy-all-1.8.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-netty/1.1.1/grpc-netty-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-codec-socks/4.1.8.Final/netty-codec-socks-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/mybatis/mybatis-spring/1.1.1/mybatis-spring-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/protobuf/protobuf-java-util/3.1.0/protobuf-java-util-3.1.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-common/4.1.8.Final/netty-common-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-context-support/3.1.1.RELEASE/spring-context-support-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-handler/4.1.8.Final/netty-handler-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/net/sf/json-lib/json-lib/2.4/json-lib-2.4-jdk15.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../hallApi/mavenlib/bouncycastle.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/googlecode/concurrentlinkedhashmap/concurrentlinkedhashmap-lru/1.4.2/concurrentlinkedhashmap-lru-1.4.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/mysql/mysql-connector-java/5.1.8/mysql-connector-java-5.1.8.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-servlets/8.1.17.v20150415/jetty-servlets-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/quartz-scheduler/quartz/1.8.4/quartz-1.8.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-webmvc/3.1.1.RELEASE/spring-webmvc-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-server/8.1.17.v20150415/jetty-server-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-tx/3.1.1.RELEASE/spring-tx-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/code/gson/gson/2.1/gson-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/mx4j/mx4j/3.0.1/mx4j-3.0.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-stub/1.1.1/grpc-stub-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/fasterxml/jackson/core/jackson-core/2.6.0/jackson-core-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/log4j/log4j/1.2.14/log4j-1.2.14.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-servlet/8.1.17.v20150415/jetty-servlet-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-util/8.1.17.v20150415/jetty-util-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/jboss/netty/netty/3.2.5.Final/netty-3.2.5.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/mybatis/mybatis/3.1.1/mybatis-3.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-aop/3.1.1.RELEASE/spring-aop-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-codec/4.1.8.Final/netty-codec-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/fasterxml/jackson/core/jackson-databind/2.6.0/jackson-databind-2.6.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-codec-http/4.1.8.Final/netty-codec-http-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/apache/velocity/velocity/1.7/velocity-1.7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-io/8.1.17.v20150415/jetty-io-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/apache/hadoop/zookeeper/3.3.1/zookeeper-3.3.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-context/1.1.1/grpc-context-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/jline/jline/0.9.94/jline-0.9.94.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-expression/3.1.1.RELEASE/spring-expression-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-asm/3.1.1.RELEASE/spring-asm-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-continuation/8.1.17.v20150415/jetty-continuation-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/redis/clients/jedis/2.9.0/jedis-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../hallApi/mavenlib/rhino-1.7R3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/slf4j/slf4j-api/1.7.6/slf4j-api-1.7.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-xml/8.1.17.v20150415/jetty-xml-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-codec-http2/4.1.8.Final/netty-codec-http2-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/net/sf/ezmorph/ezmorph/1.0.6/ezmorph-1.0.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-webapp/8.1.17.v20150415/jetty-webapp-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-client/8.1.17.v20150415/jetty-client-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-transport/4.1.8.Final/netty-transport-4.1.8.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-context/3.1.1.RELEASE/spring-context-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/orbit/javax.servlet/3.0.0.v201112011016/javax.servlet-3.0.0.v201112011016.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/netty/netty-all/4.1.7.Final/netty-all-4.1.7.Final.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/slf4j/slf4j-log4j12/1.7.2/slf4j-log4j12-1.7.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/javax/transaction/jta/1.1/jta-1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/io/grpc/grpc-protobuf/1.1.1/grpc-protobuf-1.1.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-jdbc/3.1.1.RELEASE/spring-jdbc-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-core/3.1.1.RELEASE/spring-core-3.1.1.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/com/google/instrumentation/instrumentation-api/0.3.0/instrumentation-api-0.3.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../hallApi/mavenlib/common-scheduling-1.0.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/javax/servlet/servlet-api/2.4/servlet-api-2.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/eclipse/jetty/jetty-deploy/8.1.17.v20150415/jetty-deploy-8.1.17.v20150415.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="C:/workSpace/m2-mj/repository/org/springframework/spring-web/3.1.1.RELEASE/spring-web-3.1.1.RELEASE.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

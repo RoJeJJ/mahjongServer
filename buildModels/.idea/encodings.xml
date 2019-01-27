@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="file://$PROJECT_DIR$/../GameBattle" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../PBProtocol" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../chargeServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameCluster" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameData" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameMsg" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamePlatform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamePoker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameRank" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gameToken" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../gamelib" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hallApi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../hallWeb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../pTest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../parent" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

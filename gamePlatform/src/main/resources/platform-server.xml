@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context">
+
+	<!-- 开启自动扫描 autowire 配置 -->
+
+	<context:component-scan base-package="com.yayo" />
+	<context:component-scan base-package="com.buding.msg" />
+	<context:component-scan base-package="com.buding.db"/>
+	<context:component-scan base-package="com.buding.token"/>
+	<context:component-scan base-package="com.buding.hall"/>
+	<context:component-scan base-package="com.buding.cluster"/>
+	<context:component-scan base-package="com.buding.rank"/>
+
+	<context:property-placeholder location="classpath*:*.properties" />
+
+	<import resource="configuration.xml" />
+	<import resource="schedule.xml" />
+	<import resource="srv.xml" />
+	<import resource="db.xml" />
+	<!-- <import resource="rmi-client.xml" /> -->
+	<!-- <import resource="rmi-server.xml" /> -->
+	<import resource="dubbo-server/dubbo-server.xml" />
+<!-- 	<import resource="dubbo-client/dubbo-client.xml" /> -->
+	<import resource="admin-server.xml" />
+	<import resource="redis.xml" />
+
+	<bean id="configManager" class="com.buding.hall.config.ConfigManager">
+	    <property name="marqueeMsgConfig" value="${resourceDir}/msg/msg_marquee.json"/>
+		<property name="boxMsgConfig" value="${resourceDir}/msg/msg_box.json"/>
+		<property name="shopConfigFolder" value="${resourceDir}/shop"/>
+		<property name="taskConfigFolder" value="${resourceDir}/task"/>
+		<property name="propsConfigFolder" value="${resourceDir}/item"/>
+		<property name="exchangeConfigFolder" value="${resourceDir}/exchange"/>
+		<property name="rankConfigFolder" value="${resourceDir}/rank"/>
+		<property name="statusConfFolder" value="${resourceDir}/status"/>
+		<property name="gmPath" value="${resourceDir}/gm"/>
+		<property name="privateKeyFile" value="${resourceDir}/key/rsa_private_key.pem"/>
+		<property name="userinitTplPath" value="${resourceDir}/userinit/new_user.json"/>
+	</bean>
+
+	<bean id="randomNameConfigManager" class="com.buding.common.randomName.RandomNameConfigManager">
+		<property name="nameConfigFolder" value="${resourceDir}/names"/>
+	</bean>
+
+	<bean id="randomNameService" class="com.buding.common.randomName.RandomNameService">
+	</bean>
+
+	<bean class="com.buding.common.token.TokenClient"/>
+	<bean class="com.buding.hall.module.user.helper.UserSecurityHelper"/>
+	<bean id="hallEventBus" class="com.buding.common.event.EventBusImpl"/>
+
+	<bean id="portalTest" class="com.buding.msg.service.impl.PortalTest">
+		<property name="marqueeMsgFile" value="${resourceDir}/msg/marquee_msg_demo.txt"/>
+		<property name="boxMsgFile" value="${resourceDir}/msg/box_msg_demo.txt"/>
+	</bean>
+
+	<bean id="webServer" class="com.buding.common.network.server.NettyServer">
+		<property name="port" value="${server.hall.port}"/>
+		<property name="protocolInitalizer">
+			<bean class="com.buding.common.network.codec.NettyServerInitializer">
+				<property name="handlers">
+					<list>
+						<bean class="com.buding.hall.network.HallServerHandler"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="msgServer" class="com.buding.common.network.server.NettyServer">
+		<property name="port" value="${server.msg.port}"/>
+		<property name="protocolInitalizer">
+			<bean class="com.buding.common.network.codec.NettyServerInitializer">
+				<property name="handlers">
+					<list>
+						<bean class="com.buding.msg.network.MsgServerHandler"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+</beans>

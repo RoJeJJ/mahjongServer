@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+		xmlns:jee="http://www.springframework.org/schema/jee" xmlns:tx="http://www.springframework.org/schema/tx"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+				http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+				http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.5.xsd
+				http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd">
+
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://127.0.0.1:3306/mj?useUnicode=true&amp;characterEncoding=utf-8" />
+		<property name="username" value="root" />
+		<property name="password" value="superman" />
+		<property name="maxActive" value="50" />
+		<property name="maxIdle" value="10" />
+		<property name="initialSize" value="10" />
+		<property name="timeBetweenEvictionRunsMillis" value="2000"/>
+		<property name="minEvictableIdleTimeMillis" value="20000"/>
+		<property name="logAbandoned" value="true"/>  
+		<!-- 设置自动回收超时连接 -->  
+		<property name="removeAbandoned"  value="true"/> 
+		<!-- 自动回收超时时间(以秒数为单位) -->  
+		<property name="removeAbandonedTimeout" value="10"/> 
+	</bean>
+
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="mapperLocations" value="classpath:sqlmaps/*.xml" />
+	</bean>
+
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+		<constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>
+
+	 <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">  
+        <property name="basePackage" value="com.buding.db.mapper" />  
+    </bean>
+    
+	<!--对数据库操作都从这里取jdbcTemplate-->
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    
+	<bean id="dbService" class="com.buding.db.DbServiceImpl">
+	    <property name="server" ref="hallServer"></property>
+	</bean>
+	<bean id="commonDao" class="com.buding.common.db.dao.impl.CommonDaoImpl"></bean>
+	<bean id="cacheService" class="com.buding.common.db.cache.impl.CacheServiceImpl"></bean>
+</beans>

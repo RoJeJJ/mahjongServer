@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+   
+     <!-- 开启自动扫描 autowire 配置 -->
+<!--      <context:component-scan base-package="com.yayo" /> -->
+    <context:component-scan base-package="com.buding"/>
+    <context:property-placeholder location="classpath*:*.properties"/>
+    
+    <import resource="schedule.xml"/>
+    <import resource="srv.xml"/>
+    <import resource="dubbo-server/dubbo-server.xml"/>
+    <import resource="dubbo-client/dubbo-client.xml"/>    
+<!--     <import resource="rmi-server.xml"/> -->
+
+    <import resource="admin-server.xml"/>
+</beans>

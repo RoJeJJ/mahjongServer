@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context">
+
+	<!-- 开启自动扫描 autowire 配置 -->
+	<context:component-scan base-package="com.yayo" />
+	<context:component-scan base-package="com.buding" />
+	<context:property-placeholder location="classpath*:*.properties" />
+
+
+	<import resource="schedule.xml" />
+	<import resource="srv.xml" />
+	<import resource="dubbo-server/dubbo-server.xml" />
+	<import resource="dubbo-client/dubbo-client.xml" />
+	<import resource="admin-server.xml" />
+
+	<bean id="configManager" class="com.buding.hall.config.ConfigManager">
+		<property name="marqueeMsgConfig" value="${resourceDir}/msg/msg_marquee.json"/>
+		<property name="boxMsgConfig" value="${resourceDir}/msg/msg_box.json"/>
+		<property name="privateKeyFile" value="${resourceDir}/key/rsa_private_key.pem"/>
+	</bean>
+
+	<bean id="nettyServer" class="com.buding.common.network.server.NettyServer">
+		<property name="port" value="4000"/>
+		<property name="protocolInitalizer">
+			<bean class="com.buding.common.network.codec.NettyServerInitializer">
+				<property name="handlers">
+					<list>
+<!-- 						<bean class="com.buding.common.network.codec.Netty4Codec"></bean> -->
+						<bean class="com.buding.msg.network.MsgServerHandler"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean id="portalTest" class="com.buding.msg.service.impl.PortalTest">
+		<property name="marqueeMsgFile" value="${resourceDir}/msg/marquee_msg_demo.txt"/>
+		<property name="boxMsgFile" value="${resourceDir}/msg/box_msg_demo.txt"/>
+	</bean>
+
+	<bean class="com.buding.common.token.TokenClient"/>
+	<bean class="com.buding.hall.module.user.helper.UserSecurityHelper"/>
+</beans>

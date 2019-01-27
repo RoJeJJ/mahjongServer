@@ -1,0 +1,53 @@
+<div ng-controller="MainCtrl">
+    <div class="container-fluid">
+
+        <div class="row-fluid">
+
+            <div class="widget-box">
+                <div class="widget-title">
+                    <span class="icon"><i class="icon-info"></i></span>
+                    <h5>按月统计</h5>
+                    <div class="actions">
+
+                    </div>
+                </div>
+
+                <div class="widget-content">
+
+                </div>
+
+                <div class="widget-content">
+                    <table class="table table-bordered table-striped">
+                        <tr>
+                            <th >代理商帐号</th>
+                            <th >代理商姓名</th>
+                            <th >日期</th>
+                            <th >当月进货房卡数量</th>
+                            <th >当月出售房卡数量</th>
+                        </tr>
+                        <tr ng-repeat="one in ll">
+                            <td>
+                                {{one.username}}
+                            </td>
+                            <td>
+                                {{one.name}}
+                            </td>
+                            <td>
+                                {{one.mon}}
+                            </td>
+                            <td>
+                                {{one.store}}
+                            </td>
+                            <td>
+                                {{one.sell}}
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+
+        </div><!-- /.row-fluid -->
+
+    </div>
+</div>

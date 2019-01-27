@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context">
+
+	<!-- 开启自动扫描 autowire 配置 -->
+	<!-- <context:component-scan base-package="com.yayo" /> -->
+	<context:component-scan base-package="com.buding" />
+	<context:property-placeholder location="classpath*:*.properties" />
+
+	<import resource="admin-server.xml" />
+	<import resource="srv.xml" />
+	<import resource="redis.xml"/>
+	<import resource="jmx-server.xml"/>
+	<import resource="dobbo-client/dubbo-client.xml" />
+	<import resource="dubbo-server/dubbo-server.xml" />
+
+	<!-- <bean class="com.buding.hall.logic.util.IDUtil" /> -->
+	<bean class="com.buding.common.schedule.WorkerPool" />
+
+	<bean id="configManager" class="com.buding.hall.config.ConfigManager">
+		<property name="matchConfigFolder" value="${resourceDir}/match"/>
+		<property name="shopConfigFolder" value="${resourceDir}/shop"/>
+		<property name="propsConfigFolder" value="${resourceDir}/item"/>
+		<property name="gameConfigFolder" value="${resourceDir}/game"/>
+		<property name="msgTplPath" value="${resourceDir}/msg/msg_tpl.properties"/>
+		<property name="privateKeyFile" value="${resourceDir}/key/rsa_private_key.pem"/>
+	</bean>
+
+	<bean id="randomNameConfigManager" class="com.buding.common.randomName.RandomNameConfigManager">
+		<property name="nameConfigFolder" value="${resourceDir}/names"/>
+	</bean>
+
+	<bean id="randomNameService" class="com.buding.common.randomName.RandomNameService">
+	</bean>
+
+	<bean id="nettyServer" class="com.buding.common.network.server.NettyServer">
+		<property name="port" value="${server.battle.port}"/>
+		<property name="protocolInitalizer">
+			<bean class="com.buding.common.network.codec.NettyServerInitializer">
+				<property name="handlers">
+					<list>
+<!-- 						<bean class="com.buding.common.network.codec.Netty4Codec"></bean> -->
+						<bean class="com.buding.battle.logic.network.BattleServerHandler"/>
+					</list>
+				</property>
+			</bean>
+		</property>
+	</bean>
+
+	<bean class="com.buding.common.token.TokenClient"/>
+	<bean class="com.buding.hall.module.user.helper.UserSecurityHelper"/>
+</beans>

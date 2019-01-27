@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+/usr/bin/java -Djava.awt.headless=true -Duser.timezone=GMT+08 -Xms64M -Xmx64M -XX:PermSize=64M -XX:MaxPermSize=64M -XX:+UseConcMarkSweepGC -XX:+UseParNewGC -XX:+CMSParallelRemarkEnabled -XX:ErrorFile=hs_error%p.log -XX:OnError="pmap %p;jmap -dump:format=b,file=logs/jmap%p.log %p;jstack %p;jstat -gcutil %p;" -Djava.net.preferIPv4Stack=true -cp "/home/guosen/jetty-lib/*:." com.guosen.webx.web.ServerJetty config/server-prd.properties

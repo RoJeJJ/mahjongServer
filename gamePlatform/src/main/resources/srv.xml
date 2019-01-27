@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans">
+
+	<bean id="userService" class="com.buding.hall.module.user.service.UserServiceImpl" />
+	<bean id="userDataService" class="com.buding.hall.module.user.service.UserDataServiceImpl" />
+	<bean id="itemService" class="com.buding.hall.module.item.service.impl.ItemServiceImpl" />
+	<bean id="awardService" class="com.buding.hall.module.award.service.AwardServiceImpl" />
+	<bean id="statusService" class="com.buding.hall.module.status.service.StatusServiceImpl" />
+	<bean id="shopService" class="com.buding.hall.module.shop.service.impl.ShopServiceImpl" />
+	<bean id="clusterExternalService" class="com.buding.cluster.service.ClusterExternalService" />
+	<bean id="userRankExternalService" class="com.buding.rank.service.RankExternalService"/>
+	<bean id="userRoomService" class="com.buding.hall.module.vip.service.UserRoomServiceImpl"/>
+	<bean id="serverBgTaskLoop" class="com.buding.common.loop.ServerLoop"/>
+<!-- 	<bean id="ServerMaintainLoop" class="com.buding.common.loop.ServerLoop"></bean> -->
+	<bean id="hallServerNetMsgLoop" class="com.buding.common.loop.ServerLoop">
+	    <property name="intervalMills" value="10"/>
+	</bean>
+	<bean id="hallPortalService" class="com.buding.hall.module.ws.HallPortalServiceImpl"/>
+	<bean id="clusterLeadElectService" class="com.buding.common.cluster.service.ClusterLeadElectService">
+	    <property name="zkServer" value="${cluster.server.zk}" />
+	    <property name="leadType" value="${cluster.container.type}"/>
+	    <property name="serverInstance" value="${cluster.container.inst}"/>
+	</bean>
+	<bean id="containerCluster" class="com.buding.common.cluster.service.ContainerCluster">
+	    <property name="zkServer" value="${cluster.server.zk}" />
+	    <property name="containerType" value="${cluster.container.type}"/>
+	</bean>	
+	<bean class="com.buding.common.server.ServerConfig">
+	    <property name="instanceId" value="${cluster.container.inst}"/>
+	    <property name="serverMap">
+	        <map>
+	            <entry key="hall">
+	                <bean class="com.buding.common.cluster.model.ServerModel">
+	                    <property name="addr" value="${cluster.container.ip}:${server.hall.port}"/>
+	                    <property name="serverType" value="hall"/>
+	                    <property name="dubboAddr" value="${cluster.container.ip}:${server.dubbo.port}"/>
+	                    <property name="instanceId" value="${cluster.container.inst}"/>
+	                </bean>
+	            </entry>
+	            <entry key="msg">
+	                <bean class="com.buding.common.cluster.model.ServerModel">
+	                    <property name="addr" value="${cluster.container.ip}:${server.msg.port}"/>
+	                    <property name="serverType" value="msg"/>
+	                    <property name="dubboAddr" value="${cluster.container.ip}:${server.dubbo.port}"/>
+	                    <property name="instanceId" value="${cluster.container.inst}"/>
+	                </bean>
+	            </entry>
+	        </map>
+	    </property>
+	</bean>
+	<bean class="com.buding.common.cluster.service.ServerManager"/>
+	<bean name="hallServer" class="com.buding.hall.module.cluster.HallClusterServer"/>
+	
+
+	<bean id="userDao" class="com.buding.db.dao.UserDaoImpl" />
+	<bean id="itemDao" class="com.buding.db.dao.ItemDaoImpl" />
+	<bean id="userDataDao" class="com.buding.db.dao.UserDataDaoImpl" />
+	<bean id="taskDao" class="com.buding.db.dao.TaskDaoImpl" />
+	<bean id="robotDao" class="com.buding.db.dao.RobotDaoImpl" />
+	<bean id="userOrderDao" class="com.buding.db.dao.UserOrderDaoImpl" />
+	<bean id="userRankDao" class="com.buding.db.dao.UserRankDaoImpl" />
+	<bean id="rankAuditDao" class="com.buding.db.dao.RankAuditDaoImpl" />
+	<bean id="msgDao" class="com.buding.db.dao.MsgDaoImpl" />
+	<bean id="awardDao" class="com.buding.db.dao.AwardDaoImpl" />
+	<bean id="exchangeDao" class="com.buding.db.dao.ExchangeDaoImpl" />
+	<bean id="userRoomDao" class="com.buding.db.dao.UserRoomDaoImpl" />
+	<bean id="confDao" class="com.buding.db.dao.ConfDaoImpl" />
+	<bean id="currencyLogDao" class="com.buding.db.dao.CurrencyLogDaoImpl" />
+	
+	<bean id="tokenServer" class="com.buding.token.service.ClusterTokenServer" />
+			
+	<bean id="msgPortalService" class="com.buding.msg.service.impl.MsgPortalServiceImpl">
+    </bean>
+    <bean id="msgServerNetMsgLoop" class="com.buding.common.loop.ServerLoop">
+        <property name="intervalMills" value="10"/>
+    </bean>
+    <bean id="sendMsgServerLoop" class="com.buding.common.loop.ServerLoop">
+        <property name="intervalMills" value="60000"/>
+    </bean>
+</beans>

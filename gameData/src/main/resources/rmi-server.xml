@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans     
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="userDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="UserDao" />
+		<property name="service" ref="userDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.user.dao.UserDao" />
+		<property name="registryPort" value="${rmi.userDao.port}" />
+		<property name="servicePort" value="${rmi.userDao.port}" />
+	</bean>
+
+	<bean id="itemDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="ItemDao" />
+		<property name="service" ref="itemDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.item.dao.ItemDao" />
+		<property name="registryPort" value="${rmi.itemDao.port}" />
+		<property name="servicePort" value="${rmi.itemDao.port}" />
+	</bean>
+
+	<bean id="userDataDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="UserDataDao" />
+		<property name="service" ref="userDataDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.user.dao.UserDataDao" />
+		<property name="registryPort" value="${rmi.userDataDao.port}" />
+		<property name="servicePort" value="${rmi.userDataDao.port}" />
+	</bean>
+
+	<bean id="taskDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="TaskDao" />
+		<property name="service" ref="taskDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.task.dao.TaskDao" />
+		<property name="registryPort" value="${rmi.taskDao.port}" />
+		<property name="servicePort" value="${rmi.taskDao.port}" />
+	</bean>
+
+	<bean id="robotDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="RobotDao" />
+		<property name="service" ref="robotDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.robot.dao.RobotDao" />
+		<property name="registryPort" value="${rmi.robotDao.port}" />
+		<property name="servicePort" value="${rmi.robotDao.port}" />
+	</bean>
+
+	<bean id="userOrderDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="UserOrderDao" />
+		<property name="service" ref="userOrderDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.order.dao.UserOrderDao" />
+		<property name="registryPort" value="${rmi.userOrderDao.port}" />
+		<property name="servicePort" value="${rmi.userOrderDao.port}" />
+	</bean>
+	
+	<bean id="userRankDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="UserRankDao" />
+		<property name="service" ref="userRankDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.rank.dao.UserRankDao" />
+		<property name="registryPort" value="${rmi.userRankDao.port}" />
+		<property name="servicePort" value="${rmi.userRankDao.port}" />
+	</bean>
+	
+	<bean id="rankAuditDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="RankAuditDao" />
+		<property name="service" ref="rankAuditDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.rank.dao.RankAuditDao" />
+		<property name="registryPort" value="${rmi.rankAuditDao.port}" />
+		<property name="servicePort" value="${rmi.rankAuditDao.port}" />
+	</bean>
+	
+	<bean id="msgDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="MsgDao" />
+		<property name="service" ref="msgDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.msg.dao.MsgDao" />
+		<property name="registryPort" value="${rmi.msgDao.port}" />
+		<property name="servicePort" value="${rmi.msgDao.port}" />
+	</bean>
+	
+	<bean id="awardDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="AwardDao" />
+		<property name="service" ref="awardDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.award.dao.AwardDao" />
+		<property name="registryPort" value="${rmi.awardDao.port}" />
+		<property name="servicePort" value="${rmi.awardDao.port}" />
+	</bean>
+	
+	<bean id="exchangeDaoExporter" class="org.springframework.remoting.rmi.RmiServiceExporter">
+		<property name="serviceName" value="ExchangeDao" />
+		<property name="service" ref="exchangeDao" />
+		<property name="serviceInterface" value="com.buding.hall.module.exchange.dao.ExchangeDao" />
+		<property name="registryPort" value="${rmi.exchangeDao.port}" />
+		<property name="servicePort" value="${rmi.exchangeDao.port}" />
+	</bean>
+</beans>
